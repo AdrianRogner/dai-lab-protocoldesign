@@ -6,7 +6,7 @@ import static java.nio.charset.StandardCharsets.*;
 
 public class TextualTCPServer {
     private Socket clientSocket;
-    private serverSocket serverSocket;
+    private ServerSocket serverSocket;
     private BufferedReader in;
     private BufferedWriter out;
     private int port;
