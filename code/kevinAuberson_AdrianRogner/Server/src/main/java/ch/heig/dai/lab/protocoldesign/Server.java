@@ -1,4 +1,4 @@
-package ch.heig.dai.lab.protocoldesign;
+package code.kevinAuberson_AdrianRogner.Server.src.main.java.ch.heig.dai.lab.protocoldesign;
 
 public class Server {
     final int SERVER_PORT = 1234;
@@ -10,5 +10,7 @@ public class Server {
     }
 
     private void run() {
+        TextualTCPServer tcp = new TextualTCPServer(SERVER_PORT);
+        tcp.waitConnection();
     } 
 }
